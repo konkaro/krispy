@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <script src="main.js"></script>
+    <style>
+        body{
+            background-color: #444;
+
+        }
+        .img {
+                position: relative;
+                width: 170px;
+                display: inline-block;
+                margin: 25px
+            }
+
+        .image {
+            display: inline-block;
+            }  
+        /*controls how the text will show*/
+        .overlay {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .8s ease;
+        }
+        /*makes the text visible */
+        .img:hover .overlay {
+            opacity: 1;
+        }
+        /*decorates the content of the img <p> tags*/
+        .img p{
+            font-family: 'Allerta Stencil', sans-serif;
+            color: aliceblue;
+            text-decoration: underline;
+        }
+        /*Hover text */
+        .text {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            top: 43%;
+            left: 50%;
+            width: 170px;
+            height: 170px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: 'Dosis', sans-serif;
+            background-color: rgba(0,0,0,0.4);
+        }
+        #wrapper{
+            width: 75%;
+            margin: 0 auto;
+        }
+        h1{
+            margin: 10px;
+            font-family: 'Allerta Stencil', sans-serif;
+            color: aliceblue;
+        }
+        footer {
+            background-color: #444;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seeroro</title>
+	<link rel="stylesheet" type="text/css" href="content.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<body>
+	<div id="main">
+        <header>
+			<div class="container">
+			<a href="../index.html" title="Home"><img src="../img/	logo.png" alt="logo" class="logo"></a>
+				<nav>
+					<ul class="nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="https://www.etsy.com/ca/shop/Seeroro" target="_blank">Store</a></li>
+						<li><a href="info.html">Info</a></li>
+						<li><a href="contact.html">Contact</a></li>
+                        <li><a href="friends.html">Reco</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+    </div>
+        <h1>Recommended</h1>
+    <div id="wrapper">
+        <div class="img">
+            <img src="../img/batsky.png" title="BatskyStarman" alt="BatskyStarman" class="image" width="170">
+            <a href="https://www.instagram.com/batskystarman/" target="_blank"><p>BatskyStarman</p></a>
+            <div class="overlay">
+                <div class="text">BatskyStarman streams art, design and sometimes games!</div>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../img/qko.png" title="Quqco" alt="Quqco" class="image" width="170">
+            <a href="https://www.instagram.com/quqco/" target="_blank"><p>Quqco</p></a>
+            <div class="overlay">
+                <div class="text" >Quqco primarily draws anime/manga portraits and does realism studies.</div>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../img/bella.png" alt="Bell4trixx" title="Bell4trixx" class="image" width="170">
+            <a href="https://www.instagram.com/bell4trixx/" target="_blank"><p>Bell4trixx</p></a>
+            <div class="overlay">
+                <div class="text">Bell4trixx works with ink, marker, colored pencil, and digital mediums to create stylized portraits and concept art.</div>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../img/aug.jpg" title="Ougusu" alt="Ougusu" class="image" width="170">
+            <a href="https://www.instagram.com/aug.16th_art/" target="_blank"><p>Ougusu</p></a>
+            <div class="overlay">
+                <div class="text">Ougusu creates stories and draws manga live on twitch.</div>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../img/pome.png" title="Pomelyne" alt="Pomelyne" class="image" width="170">
+            <a href="https://www.instagram.com/Pomelyne/" target="_blank"><p>Pomelyne</p></a>
+            <div class="overlay">
+                <div class="text">Pomelyne draws anime like character in mandy different styles.</div>
+            </div>
+        </div>
+        </div>
+
+    <div id="main">
+		<footer>
+			<div class="social">
+				<a href="https://www.instagram.com/seeroro_/" target="_blank"><img src="../img/instaa.png" alt="Instagram" title="Instagram"></a>
+				<a href="https://twitter.com/seeroro" target="_blank"><img src="../img/twit.png" alt="Twitter" title="Twitter"></a>
+				<a href="https://www.twitch.tv/seeroro" target="_blank"><img src="../img/stream.png" alt="Twitch" title="Twitch"></a>
+				<a href="https://discordapp.com/invite/VkDtYaZ" target="_blank"><img src="../img/discord.png" alt="Discord" title="Discord"></a>
+			</div>
+			<p>Copyright &copy; Seeroro.
+                All rights reserved</p>
+        </footer>
+    </div>
+    </body>
+</html>
+<!--Credit: w3schools.com for hover text template-->

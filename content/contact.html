@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <script src="./main.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            height: 100vh;
+            background-color: #444;
+        }
+        .con-title{
+            margin-top: 70px;
+            color: antiquewhite;
+            text-transform: uppercase;
+        }
+        .con-title h1{
+            font-size: 32px;
+            line-height: 10px;
+        }
+        /*Form decoration*/
+        form{
+            margin-top: 50px;
+        }
+        .form-control{
+            width: 600px;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid gray;
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+        input{
+            height: 45px;
+        }
+        form .submit{
+            background: #f572;
+            border-color: transparent;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            height: 50px;
+            margin-top: 20px;
+        }
+        form .submit:hover{
+            background-color: #f436;
+            cursor: pointer;
+        }
+        .contact-form{
+            max-width: 550px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        .form-control{
+            width: 50vw;
+        }
+        textarea{
+            resize: none;
+        }
+        footer{
+            background-color: #444;
+        }
+    </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seeroro</title>
+	<link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="content.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+      <div id="main">
+          <header>
+			<div class="container">
+				<a href="../index.html" title="Home"><img src="../img/logo.png" alt="logo" class="logo"></a>
+				<nav>
+					<ul class="nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="https://www.etsy.com/ca/shop/Seeroro" target="_blank">Store</a></li>
+						<li><a href="info.html">Info</a></li>
+						<li><a href="contact.html">Contact</a></li>
+                        <li><a href="friends.html">Reco</a></li>
+					</ul>
+				</nav>
+			</div>
+        </header>
+    </div>
+
+    <div id="wrapper">
+        <div class="con-title">
+			<h1>Contact</h1>
+        </div>
+        <!--Creates the contact form-->
+        <div class="contact-form">
+            <form onsubmit="confirmInput()" action="contact.html" class="contact-form" method="get" action="">
+                <input type="text" name="name" class="form-control" placeholder="Name" required><br>
+                <input type="email" name="email" class="form-control" placeholder="Email" required><br>
+                <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+                <input type="submit" class="form-control submit">
+            </form>
+        </div>
+
+    </div>
+
+    <div id="main">
+		<footer>
+			<div class="social">
+				<a href="https://www.instagram.com/seeroro_/" target="_blank"><img src="../img/instaa.png" alt="Instagram" title="Instagram"></a>
+				<a href="https://twitter.com/seeroro" target="_blank"><img src="../img/twit.png" alt="Twitter" title="Twitter"></a>
+				<a href="https://www.twitch.tv/seeroro" target="_blank"><img src="../img/stream.png" alt="Twitch" title="Twitch"></a>
+				<a href="https://discordapp.com/invite/VkDtYaZ" target="_blank"><img src="../img/discord.png" alt="Discord" title="Discord"></a>
+			</div>
+				<p>Copyright &copy; Seeroro.
+                All rights reserved</p>
+		</footer>
+	</div>
+</body>
+</html>

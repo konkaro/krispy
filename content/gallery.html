@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <script src="main.js"></script>
+    <style>
+        body{
+            font-family: sans-serif;
+            background: #444;
+        }
+        h1{
+            text-align: center;
+            color: floralwhite;
+            margin: 30px 0 50px;
+        }
+        /*Styles the gallery image, position and effects*/
+        .gallery img{
+            width: 230px;
+            height: 230px;
+            padding: 5px;
+            filter: grayscale(100%);
+            transition: .5s;
+        }
+        .gallery img:hover{
+            filter: grayscale(0);
+            transform: scale(1.1);
+        }
+        footer{
+            background-color: #444;
+        }
+
+    </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seeroro</title>
+	<link rel="stylesheet" type="text/css" href="content.css">
+    <link rel="stylesheet" type="text/css" href="../content/lightbox.min.css">
+    <script type="text/javascript" src="../content/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+	<div id="main">
+        <header>
+			<div class="container">
+			<a href="../index.html" title="Home"><img src="../img/	logo.png" alt="logo" class="logo"></a>
+				<nav>
+					<ul class="nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="https://www.etsy.com/ca/shop/Seeroro" target="_blank">Store</a></li>
+						<li><a href="info.html">Info</a></li>
+						<li><a href="contact.html">Contact</a></li>
+                        <li><a href="friends.html">Reco</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+        <!--Places the images within the gallery-->
+        <h1>Gallery</h1>
+        <div class="gallery">
+            <a href="../img/drawing1.jpg" data-lightbox="gallery"><img src="../img/drawing1.jpg"></a>
+            <a href="../img/drawing2.jpg" data-lightbox="gallery"><img src="../img/drawing2.jpg"></a>
+            <a href="../img/drawing3.jpg" data-lightbox="gallery"><img src="../img/drawing3.jpg"></a>
+            <a href="../img/drawing4.jpg" data-lightbox="gallery"><img src="../img/drawing4.jpg"></a>
+            <a href="../img/drawing5.jpg" data-lightbox="gallery"><img src="../img/drawing5.jpg"></a>
+            <a href="../img/drawing6.jpg" data-lightbox="gallery"><img src="../img/drawing6.jpg"></a>
+            <a href="../img/drawing7.jpg" data-lightbox="gallery"><img src="../img/drawing7.jpg"></a>
+            <a href="../img/drawing8.jpg" data-lightbox="gallery"><img src="../img/drawing8.jpg"></a>
+            <a href="../img/drawing9.jpg" data-lightbox="gallery"><img src="../img/drawing9.jpg"></a>
+            <a href="../img/drawing10.jpg" data-lightbox="gallery"><img src="../img/drawing10.jpg"></a>
+            <a href="../img/drawing11.jpg" data-lightbox="gallery"><img src="../img/drawing11.jpg"></a>
+        </div>
+
+		<footer>
+			<div class="social">
+				<a href="https://www.instagram.com/seeroro_/" target="_blank"><img src="../img/instaa.png" alt="Instagram" title="Instagram"></a>
+				<a href="https://twitter.com/seeroro" target="_blank"><img src="../img/twit.png" alt="Twitter" title="Twitter"></a>
+				<a href="https://www.twitch.tv/seeroro" target="_blank"><img src="../img/stream.png" alt="Twitch" title="Twitch"></a>
+				<a href="https://discordapp.com/invite/VkDtYaZ" target="_blank"><img src="../img/discord.png" alt="Discord" title="Discord"></a>
+			</div>
+			<p>Copyright &copy; Seeroro.
+            All rights reserved</p>
+		</footer>
+	</div>
+</body>
+</html>
+<!--Credit:jquery for javascript and Easy Tutorials for styling template--> 
